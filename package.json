@@ -1,0 +1,24 @@
+{
+  "name": "konekt",
+  "version": "1.0.0",
+  "description": "actual IDE support for computercraft",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .\\konekt\\index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microwavedram/konekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microwavedram/konekt/issues"
+  },
+  "homepage": "https://github.com/microwavedram/konekt#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "ws": "^8.5.0"
+  }
+}
