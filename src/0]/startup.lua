@@ -1,0 +1,5 @@
+shell.run("fg checker")
+shell.run("fg konekt")
+shell.run("fg game")
+shell.run("fg depositer")
+shell.run("fg f3")
