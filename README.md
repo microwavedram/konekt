@@ -23,7 +23,7 @@ npm run start
 # Installation (cc:tweaked (ingame) )
 Run 
 ```
-pastebin run R7PJ6NYR
+pastebin run naNXiSPL
 ```
 and follow the instructions
 
