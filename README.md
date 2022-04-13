@@ -35,7 +35,7 @@ Konekt-Node allows other computers to get the websocket from this one.
 To start Konekt on the computer ingame, run konekt_client
 (if you selected add to startup.lua in the install it will already be running)
 
-Note down the ID of the computer you have konekt
+Note down the ID of the computer you have konekt running on.
 If you do not know your computers id you can run
 ```
 pastebin run 7XP4rwcT
