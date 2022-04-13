@@ -53,3 +53,7 @@ Only files in a computers folder will sync to said computer
 - Files will resync when you save them
 
 Contact me for help ig
+<<<<<<< HEAD
+=======
+
+>>>>>>> e24520a80d0f73ff9fc47291cb778d80abfde88a
