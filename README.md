@@ -1,7 +1,6 @@
 # konekt
-actual IDE support for computercraft
-
-
+exturnal IDE support for computercraft via a folder on a players machine that autosyncs to the ingame file system
+access to server files is not required
 
 # Installation (konekt-server)
 to get going, first clone this repo to a directory
