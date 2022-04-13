@@ -27,7 +27,7 @@ pastebin run naNXiSPL
 ```
 and follow the instructions
 
-Konekt-Node allows other computers to get the websocket from this one.
+Konekt-Node allows other computers share the websocket
 
 
 # Usage
@@ -42,9 +42,9 @@ pastebin run 7XP4rwcT
 ```
 and it will print out the id
 
-To get started in your websocket folder,
-add a new folder to ./src
-Name this folder the computers ID appended with a "]"
+- To get started, Navigate into your websocket folder. 
+- Then add a new folder to ./src
+- Name this folder the computers ID appended with a "]"
 
 Only files in a computers folder will sync to said computer
 
