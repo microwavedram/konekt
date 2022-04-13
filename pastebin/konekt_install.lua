@@ -5,10 +5,10 @@ end
 if fs.exists("konekt_node.lua") then
     fs.delete("konekt_node.lua")
 end
-shell.run("pastebin get kZeMH7bu konekt_client.lua")
+shell.run("pastebin get NLmyy2iR konekt_client.lua")
 print("Do you want to also install konekt_node (y/n)")
 if read() == "y" then
-    shell.run("pastebin get 0hbrCRSy konekt_node.lua")
+    shell.run("pastebin get XYxPVyMi konekt_node.lua")
 end
 print("Should Konekt overide and add its self to startup.lua? (y/n)")
 if read() == "y" then

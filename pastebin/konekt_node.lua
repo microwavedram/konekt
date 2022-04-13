@@ -8,6 +8,10 @@ file.close()
 while true do
     local id, message = rednet.receive("konekt")
     if message == "get_ws" then
-        rednet.send(id,ws,"konekt")
+        print("Pinged by "..tostring(id))
+        os.sleep(0.5)
+        rednet.broadcast(textutils.serialiseJSON({
+            ["ws"] = ws
+        }),"konekt")
     end
 end

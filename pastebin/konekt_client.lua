@@ -30,7 +30,7 @@ string.split = function(str, pat, limit)
 end
 
 if modem then
-    peripheral.find(modem,rednet.open)
+    peripheral.find("modem",rednet.open)
 end
 
 local function isInTable(t,v)
@@ -85,30 +85,39 @@ local function netGetWS()
     local blacklist = {}
 
     rednet.broadcast("get_ws","konekt")
-    while true do
-        local id, message = rednet.receive("konekt")
-        if not isInTable(id,blacklist) then
-            local success, parse = pcall(textutils.unserialiseJSON,message)
+    for i = 1,3,1 do
+        local id, message = rednet.receive("konekt",5)
+        if not isInTable(blacklist,id) then
+            local parse
+            local success, err = pcall(function()parse =textutils.unserialiseJSON(message)end)
             if success then
-                if parse["ws"] ~= nil then
-                    return parse["ws"]                
+                if parse["ws"] ~= nil then 
+                    return parse["ws"]
                 end
-            end
+            end    
         end
+        print("Attempt "..tostring(i))   
     end
+    return nil
 end
 
 if modem then
     ws = netGetWS()
-elseif fs.exists(".konekt") then
+    if ws == nil then
+        print("Could not get WS from localfile or network")
+    end
+end
+if fs.exists(".konekt") and not ws then
     print("Getting WS from local file")
     local file = fs.open(".konekt","r")
     ws = file.readAll()
     file.close()
 else
-    print("Could not get WS from localfile or network")
-    print("Please Enter Manualy")
-    ws = read()
+    if ws == nil then
+        print("Could not get WS from localfile or network")
+        print("Please Enter Manualy")
+        ws = read()
+    end
 end
 
 for i = 1,5,1 do
