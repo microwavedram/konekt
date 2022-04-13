@@ -23,7 +23,7 @@ npm run start
 # Installation (cc:tweaked (ingame) )
 Run 
 ```
-pastebin run R7PJ6NYR
+pastebin run naNXiSPL
 ```
 and follow the instructions
 
@@ -35,7 +35,7 @@ Konekt-Node allows other computers to get the websocket from this one.
 To start Konekt on the computer ingame, run konekt_client
 (if you selected add to startup.lua in the install it will already be running)
 
-Note down the ID of the computer you have konekt
+Note down the ID of the computer you have konekt running on.
 If you do not know your computers id you can run
 ```
 pastebin run 7XP4rwcT
@@ -53,7 +53,4 @@ Only files in a computers folder will sync to said computer
 - Files will resync when you save them
 
 Contact me for help ig
-<<<<<<< HEAD
-=======
 
->>>>>>> e24520a80d0f73ff9fc47291cb778d80abfde88a
