@@ -2,6 +2,8 @@
 external IDE support for computercraft via a folder on a players machine that autosyncs via a websocket to ingame filesystems.
 You do not even need serverside access
 
+**see /modules/ for some useful stuff i created in my short adventure into computercraft**
+
 # Features
 - Machine independant folders
 - Nested Directory Support
