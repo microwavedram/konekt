@@ -61,7 +61,7 @@ Only files in a computers folder will sync to said computer
 - Files will resync when you save them
 - I reccomend you used Visual Studio Code combined with the LUA extention (sumneko) and computercraft plugin (JackMacWindows) as you can add the computercraft globals to the lua extentions settings
 - Per-Machine config is stored in the .konekt file
-- Websockets do have a datalink so you might run into issues with big files (Maybe a chunking fix?)
+- Websockets do have a data limit so you might run into issues with big files (Maybe a chunking fix?)
 - Currently has issues on multiplayers servers as one global channel is used to send the rednet requests
 (this can be circumvented by used wired connections or normal modems, **just be careful when using ender modems while others also use konekt**)
 
