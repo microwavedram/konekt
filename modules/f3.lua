@@ -3,7 +3,7 @@
 local config = require("config")
 local ui = require("ui")
 
-local monitor = ui.wrap(peripheral.wrap("right"))
+local monitor = ui.wrap(peripheral.find("monitor"))
 
 local function render(x,y)
     monitor:blite(1,1,"DEBUG","0","e")
