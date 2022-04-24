@@ -1,5 +1,5 @@
 peripheral.find("modem",rednet.open)
-assert(fs.exists(".konekt"), "No WS located")
+assert(fs.exists(".konekt"), "No WS located, You might need to connect the primary websocket and reboot the computer")
 
 local file = fs.open(".konekt","r")
 local ws = file.readAll()
