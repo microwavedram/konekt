@@ -1,7 +1,15 @@
 # konekt
-actual IDE support for computercraft
+external IDE support for computercraft via a folder on a players machine that autosyncs via a websocket to ingame filesystems.
+You do not even need serverside access
 
+**see /modules/ for some useful stuff i created in my short adventure into computercraft**
 
+# Features
+- Machine independant folders
+- Nested Directory Support
+- Supports all file-types
+- Rednet Websocket URL sharing between computers
+- No server access required
 
 # Installation (konekt-server)
 to get going, first clone this repo to a directory
@@ -27,7 +35,7 @@ pastebin run naNXiSPL
 ```
 and follow the instructions
 
-Konekt-Node allows other computers to get the websocket from this one.
+Konekt-Node allows other computers share the websocket
 
 
 # Usage
@@ -42,15 +50,22 @@ pastebin run 7XP4rwcT
 ```
 and it will print out the id
 
-To get started in your websocket folder,
-add a new folder to ./src
-Name this folder the computers ID appended with a "]"
+- To get started, Navigate into your websocket folder. 
+- Then add a new folder to ./src
+- Name this folder the computers ID appended with a "]"
 
 Only files in a computers folder will sync to said computer
 
 # Notes and stuff
 - Directorys will be created when a file is put inside
 - Files will resync when you save them
+- I reccomend you used Visual Studio Code combined with the LUA extention (sumneko) and computercraft plugin (JackMacWindows) as you can add the computercraft globals to the lua extentions settings
+- Per-Machine config is stored in the .konekt file
+- Websockets do have a data limit so you might run into issues with big files (Maybe a chunking fix?)
+- Currently has issues on multiplayers servers as one global channel is used to send the rednet requests
+(this can be circumvented by used wired connections or normal modems, **just be careful when using ender modems while others also use konekt**)
 
-Contact me for help ig
+Contact me for help ig (Crazylegs#7064)
+
+for contributing, message me or something
 
